@@ -1,9 +1,13 @@
 {
   "extends": [
     "airbnb",
-    "plugin:@typescript-eslint/recommended"
+    "prettier"
   ],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaVersion": 8
+  },
   "rules": {
     "import/no-unresolved": "off",
     "react/jsx-filename-extension": [
